@@ -64,7 +64,7 @@ public class ImageCellAdapter extends BaseAdapter {
             view.setImageDrawable(null);
         }
 
-        view.setArguments((GridView) mParentView, position, true);
+        view.setArguments(position, true);
         view.setOnDragListener(mDragListener);
         view.setBackgroundResource(R.color.cell_empty);
         view.setOnClickListener((View.OnClickListener) mContext);

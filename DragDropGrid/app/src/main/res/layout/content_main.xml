@@ -46,6 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:onClick="onClickAddImage"
+                    android:layout_margin="@dimen/add_image_margin"
                     android:text="Add image" />
                 <com.care.dragdropgrid.DeleteZone
                     android:id="@+id/delete_zone_view"

@@ -22,7 +22,6 @@ public class ImageCell extends ImageView
 
     private boolean mEmpty = true;
     private int mCellNumber = -1;
-    private GridView mGridView;
 
     public ImageCell(Context context) {
         super(context);
@@ -149,12 +148,10 @@ public class ImageCell extends ImageView
 
     /**
      * Set arguments for ImageCell
-     * @param gv GridView - grid view as the parent of this cell
      * @param cn integer - cell number of the grid
      * @param e boolean - cell empty status
      */
-    public void setArguments(GridView gv, int cn, boolean e) {
-        mGridView = gv;
+    public void setArguments(int cn, boolean e) {
         mCellNumber = cn;
         mEmpty = e;
     }

@@ -17,6 +17,8 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 
+import com.care.core.Utilities;
+
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener, View.OnLongClickListener,
         View.OnTouchListener, DragDropPresenter {
@@ -174,7 +176,7 @@ public class MainActivity extends AppCompatActivity
             ImageCell newView = new ImageCell(this);
             newView.setImageResource(resourceId);
             imageHolder.addView(newView, lp);
-            newView.setArguments(null, -1, false);
+            newView.setArguments(-1, false);
             mLastNewCell = newView;
             mImageCount++;
 
@@ -190,7 +192,11 @@ public class MainActivity extends AppCompatActivity
      * See addImageToScreen.
      */
     public void addNewImageToScreen() {
-        int resourceId = R.drawable.trashcan;
+
+        int m = mImageCount % 7;
+        m += 1;
+
+        int resourceId = Utilities.getResId("item" + m, R.drawable.class);
 
         addNewImageToScreen(resourceId);
     }

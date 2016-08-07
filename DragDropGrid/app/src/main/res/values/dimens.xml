@@ -12,6 +12,8 @@
     <dimen name="add_image_width">80dp</dimen>
     <dimen name="add_image_height">80dp</dimen>
 
+    <dimen name="add_image_margin">14dip</dimen>
+
     <dimen name="delete_zone_size">70dip</dimen>
     <dimen name="delete_zone_padding">14dip</dimen>
 </resources>
