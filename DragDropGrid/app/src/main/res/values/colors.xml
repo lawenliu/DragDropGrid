@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="transparent">#00000000</color>
+
     <color name="grid_background">#FF000000</color>
     <color name="cell_empty">#FF993311</color>
     <color name="cell_nearly_empty">#88993311</color>

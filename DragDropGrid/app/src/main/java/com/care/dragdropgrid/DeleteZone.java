@@ -55,7 +55,7 @@ public class DeleteZone extends ImageView
     @Override
     public void onDragExit(DragSource source) {
         if(isEnabled()) {
-            // Set the image level to 1 so that the image show normally.
+            // Set the image level to 1 so that the image show normally.andr
             setImageLevel(1);
         }
     }

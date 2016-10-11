@@ -15,7 +15,6 @@ import android.widget.ImageView;
 public class ImageCellAdapter extends BaseAdapter {
 
     private Context mContext = null;
-    private ViewGroup mParentView = null;
     private View.OnDragListener mDragListener = null;
 
     public ImageCellAdapter(Context c) {
@@ -46,7 +45,6 @@ public class ImageCellAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        mParentView = parent;
 
         int cellWidth = mContext.getResources().getDimensionPixelSize(R.dimen.grid_cell_width);
         int cellHeight = mContext.getResources().getDimensionPixelSize(R.dimen.grid_cell_height);
